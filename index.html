@@ -695,145 +695,25 @@ footer::before {
   </div>
 </section>
 
-<!-- LATEST SINGLE: TOO LOUD -->
-<section id="latest">
-  <div class="latest-inner">
-    <div class="latest-badge-wrap">
-      <!--
-        ALBUM ART: replace src with your hosted image path
-        File: Vanta_-_Dirty_Signal__Album_Cover_.png
-      -->
-      <img
-        src="https://raw.githubusercontent.com/SteveP999/vanta/main/Vanta%20-%20Too%20Loud%20-%20Album%20Cover.png"
-        alt="Too Loud"
-        class="latest-art"
-        onerror="this.outerHTML='<div class=\'latest-art-placeholder\'>TL</div>'"
-      >
-      <div class="latest-new-badge">Latest Release</div>
-    </div>
-    <div>
-      <div class="latest-label">New Single</div>
-      <div class="latest-title">TOO LOUD</div>
-      <div class="latest-artist">Vanta</div>
-      <p class="latest-desc">Turn it up. Too Loud is Vanta at full volume — no filler, no apologies, exactly the way rock is supposed to hit.</p>
-      <button class="latest-play-btn" onclick="playTrack('single_tl')">
-        &#9654; Play Now
-      </button>
-    </div>
-  </div>
-</section>
 
-<!-- SIGNAL — ALBUM -->
-<section id="signal" class="album-section signal">
-  <div class="album-wrap">
-    <div class="album-layout">
-      <div class="album-art-wrap">
-        <!--
-          ALBUM ART: replace src with your hosted image path
-          File: Vanta_-_Signal_-_Album_Cover.png
-        -->
-        <img
-          src="https://raw.githubusercontent.com/SteveP999/vanta/main/Vanta%20-%20Signal%20-%20Album%20Cover.png"
-          alt="Signal"
-          class="album-art-img"
-          onerror="this.outerHTML='<div class=\'album-art-placeholder\'><div class=\'ph-v\'>V</div><span class=\'ph-label\'>Signal</span></div>'"
-        >
-      </div>
-      <div class="album-info">
-        <div class="album-tag">Album · Hard Rock · Heavy</div>
-        <div class="album-title-text">SIGNAL</div>
-        <div class="album-artist">Vanta</div>
-        <p class="album-desc">The debut. Three songs with no warm-up, no apology, and no fade-out. Loud from the first note. Still loud at the end.</p>
-        <div class="stream-row">
-          <a href="#" class="stream-btn">&#9654; Spotify</a>
-          <a href="#" class="stream-btn">&#9834; Apple Music</a>
-        </div>
-        <div class="tracklist">
-          <div class="track-row">
-            <span class="track-num">01</span>
-            <span class="track-title">Don't Need Permission</span>
-            <button class="track-play-btn" onclick="playTrack('sig_dnp')">&#9654;</button>
-          </div>
-          <div class="track-row">
-            <span class="track-num">02</span>
-            <span class="track-title">Cut the Line</span>
-            <button class="track-play-btn" onclick="playTrack('sig_ctl')">&#9654;</button>
-          </div>
-          <div class="track-row">
-            <span class="track-num">03</span>
-            <span class="track-title">Dirty Signal</span>
-            <button class="track-play-btn" onclick="playTrack('sig_ds')">&#9654;</button>
-          </div>
-          <div class="track-row">
-            <span class="track-num">04</span>
-            <span class="track-title">Too Loud</span>
-            <button class="track-play-btn" onclick="playTrack('sig_tl')">&#9654;</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- LATEST SINGLE - FEATURED -->
+<section id="latest-single-featured" style="background:var(--deep,#09080F);padding:5rem 0;border-top:1px solid rgba(200,168,60,0.12);position:relative;z-index:1;">
+<div style="text-align:center;padding:0 2rem 3.5rem;">
+<div style="font-family:'Oswald',sans-serif;font-size:0.65rem;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold,#C8A83C);margin-bottom:0.75rem;">Latest Single</div>
+<h2 id="latest-title" style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(2rem,5vw,3.5rem);letter-spacing:0.06em;text-transform:uppercase;color:var(--white,var(--cream,#F0EDE0));">TOO LOUD</h2>
+<div style="width:60px;height:2px;margin:1.2rem auto 0;background:var(--gold,#C8A83C);"></div>
+</div>
+<div id="latest-vanta" style="max-width:1040px;margin:0 auto;padding:0 2.5rem;display:grid;grid-template-columns:380px 1fr;gap:4rem;align-items:center;">
+<div><img src="https://raw.githubusercontent.com/SteveP999/Vanta/main/vanta-too-loud-album-cover.png" alt="Too Loud" id="latest-cover" style="width:100%;aspect-ratio:1;object-fit:cover;display:block;box-shadow:0 0 60px rgba(200,168,60,0.25),0 24px 64px rgba(0,0,0,0.8);"></div>
+<div style="padding-top:0.5rem;">
+<div style="display:inline-block;font-family:'Oswald',sans-serif;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold,#C8A83C);border:1px solid rgba(200,168,60,0.4);padding:0.25rem 0.85rem;margin-bottom:1.2rem;">Latest Single</div>
+<h2 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(2rem,4vw,3rem);text-transform:uppercase;letter-spacing:0.06em;line-height:1.1;margin-bottom:0.5rem;color:var(--white,var(--cream,#F0EDE0));">TOO LOUD</h2>
+<div style="font-family:'Oswald',sans-serif;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--mist,#888880);margin-bottom:2rem;">VANTA</div>
+<button class="play-single-btn" onclick="playTrack('latest')" style="display:inline-flex;align-items:center;gap:0.75rem;background:transparent;color:var(--gold,#C8A83C);border:1px solid rgba(200,168,60,0.45);cursor:pointer;padding:0.85rem 2rem;font-family:'Oswald',sans-serif;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;">&#9654;&nbsp; Play Now</button>
+</div>
+</div>
 </section>
-
-<!-- DAMAGE — ALBUM -->
-<section id="damage" class="album-section damage">
-  <div class="album-wrap">
-    <div class="album-layout">
-      <div class="album-art-wrap">
-        <!--
-          ALBUM ART: replace src with your hosted image path
-          File: Vanta_-_Damage_-_Album_Cover.png
-        -->
-        <img
-          src="https://raw.githubusercontent.com/SteveP999/vanta/main/Vanta%20-%20Damage%20-%20Album%20Cover.png"
-          alt="Damage"
-          class="album-art-img"
-          onerror="this.outerHTML='<div class=\'album-art-placeholder\'><div class=\'ph-v\'>V</div><span class=\'ph-label\'>Damage</span></div>'"
-        >
-      </div>
-      <div class="album-info">
-        <div class="album-tag">Album · Hard Rock · Heavy</div>
-        <div class="album-title-text">DAMAGE</div>
-        <div class="album-artist">Vanta</div>
-        <p class="album-desc">The second record. Title earned. Everything on this one hits harder than you expect and leaves marks accordingly.</p>
-        <div class="stream-row">
-          <a href="#" class="stream-btn">&#9654; Spotify</a>
-          <a href="#" class="stream-btn">&#9834; Apple Music</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GRAVITY — ALBUM -->
-<section id="gravity" class="album-section gravity">
-  <div class="album-wrap">
-    <div class="album-layout">
-      <div class="album-art-wrap">
-        <!--
-          ALBUM ART: replace src with your hosted image path
-          File: Vanta_-_Gravity_-_Album_Cover.png
-        -->
-        <img
-          src="https://raw.githubusercontent.com/SteveP999/vanta/main/Vanta%20-%20Gravity%20-%20Album%20Cover.png"
-          alt="Gravity"
-          class="album-art-img"
-          onerror="this.outerHTML='<div class=\'album-art-placeholder\'><div class=\'ph-v\'>V</div><span class=\'ph-label\'>Gravity</span></div>'"
-        >
-      </div>
-      <div class="album-info">
-        <div class="album-tag">Album · Hard Rock · Heavy</div>
-        <div class="album-title-text">GRAVITY</div>
-        <div class="album-artist">Vanta</div>
-        <p class="album-desc">The third record. Everything falls eventually. Gravity doesn't ask and it doesn't negotiate — neither does this album.</p>
-        <div class="stream-row">
-          <a href="#" class="stream-btn">&#9654; Spotify</a>
-          <a href="#" class="stream-btn">&#9834; Apple Music</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- END LATEST SINGLE FEATURED -->
 
 <!-- SINGLES -->
 <section id="singles">
@@ -1129,5 +1009,21 @@ fetch('https://raw.githubusercontent.com/SteveP999/vanta/main/latest.json')
   .catch(() => {});
 </script>
 
+
+<script>
+(function(){
+  if(typeof TRACKS!=='undefined')TRACKS["latest"]={title:"Too Loud",sub:"Single",src:""};
+  fetch("https://raw.githubusercontent.com/SteveP999/Vanta/main/latest.json?cb="+Date.now())
+  .then(r=>r.json())
+  .then(function(data){
+    var cv=document.getElementById("latest-cover");
+    var tt=document.getElementById("latest-title");
+    if(cv&&data.image)cv.src=data.image;
+    if(tt&&data.title)tt.textContent=data.title;
+    if(typeof TRACKS!=='undefined'&&data.audio)TRACKS["latest"].src=data.audio;
+  })
+  .catch(function(){});
+})();
+</script>
 </body>
 </html>
